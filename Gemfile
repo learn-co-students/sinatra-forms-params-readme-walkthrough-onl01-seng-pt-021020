@@ -8,7 +8,7 @@ gem 'require_all'
 
 group :test do
   gem 'rspec'
-  gem 'capybara'
+  gem 'capybara', '~> 3.32', '>= 3.32.1'
   gem 'rack-test'
   gem 'pry'
 end
