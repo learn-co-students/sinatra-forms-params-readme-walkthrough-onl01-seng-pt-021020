@@ -11,6 +11,13 @@ class App < Sinatra::Base
   end 
   
   #Let's use the key-value pairs in params to return the following phrase, using good-old string interpolation^^
+  
+  
+  #Notice that both of the attributes from the form are covered in this route: The method post and the action /food. It's almost like a game of catch - the form is throwing the data to the server, which catches it by having the same receiving address (/food) and way of receiving the data (post).
+  
+  #All user submitted data will appear in a params hash accessible throughout our Sinatra controllers. The name attribute of an <input> corresponds to a key in the params hash for that data.
+
+#If you create a text field input with <input type="text" name="favorite_food">, whenever the user submits that form, you will be able to access the data entered into the Favorite Foods text box via params[:favorite_food].
 
   
 
